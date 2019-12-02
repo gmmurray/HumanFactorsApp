@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Page Three</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="icon.png">
+    <link rel="stylesheet" href="css/semantic/semantic-ui.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="ui container container-margin--y">
+        <h1 class="ui center aligned header">HumanFactorsApp</h1>
+        <form>
+            <div class="ui form">
+                <!-- Education Section -->
+                <h5 class="ui dividing header">Education Information</h5>
+                <div class="inline required field">
+                    <label for="educationLevel">Highest Level of Education</label>
+                    <select class="ui search dropdown">
+                        <option value="">Select</option>
+                        <option value="highschool">High School Diploma/GED</option>
+                        <option value="someCollege">Some College</option>
+                        <option value="associate">Associate's Degree</option>
+                        <option value="bachelor">Bachelor's Degree</option>
+                        <option value="master">Master's Degree</option>
+                        <option value="phd">Ph.D</option>
+                    </select>
+                </div>
+
+                <div class="equal width fields">
+                    <div class="field">
+                        <label for="highschoolLocation">High School</label>
+                        <input type="text" name="highschoolLocation">
+                    </div>
+                    <div class="field">
+                        <label for="highschoolDegree">Degree</label>
+                        <select class="ui dropdown" name="highschoolDegree">
+                            <option value="">Select</option>
+                            <option value="diploma">Diploma</option>
+                            <option value="ged">GED</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="equal width fields">
+                    <div class="field">
+                        <label for="undergradLocation">Under-graduate</label>
+                        <input type="text" name="undergradLocation">
+                    </div>
+                    <div class="field">
+                        <label for="undergradDegree">Degree</label>
+                        <input type="text"name="undergradDegree">
+                    </div>
+                </div>
+
+                <div class="equal width fields">
+                    <div class="field">
+                        <label for="postgradLocation">Post-graduate</label>
+                        <input type="text" name="postgradLocation">
+                    </div>
+                    <div class="field">
+                        <label for="postgradDegree">Degree</label>
+                        <input type="text" name="postgradDegree">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label for="additionalQual">Additional Qualifications</label>
+                    <textarea name="additionalQual"></textarea>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="ui container container-margin--y">
+        <a class="ui red button left floated" href="PageTwo.html">Previous Page</a>
+        <a class="ui blue button right floated" href="PageFour.html">Next Page</a>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+    <script src="js/vendor/semantic-ui.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

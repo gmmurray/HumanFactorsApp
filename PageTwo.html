@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Page Two</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="icon.png">
+    <link rel="stylesheet" href="css/semantic/semantic-ui.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="ui container container-margin--y">
+        <h1 class="ui center aligned header">HumanFactorsApp</h1>
+        <form>
+            <div class="ui form">
+                <!-- Position Section -->
+                <h5 class="ui dividing header">Position Information</h5>
+                <div class="equal width fields">
+                    <div class="required field">
+                        <label for="position">Position Applied For</label>
+                        <input type="text" name="position">
+                    </div>
+                    <div class="required field">
+                        <label for="salary">Desired Salary</label>
+                        <input type="text" name="salary">
+                    </div>
+                </div>
+
+                <!--Availability-->
+                <div class="equal width inline fields">
+                    <label>Availability</label>
+                    <div class="field">
+                        <div class="ui checkbox">
+                            <input type="checkbox" name="monday">
+                            <label for="monday">Mon</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui checkbox">
+                            <input type="checkbox" name="tuesday">
+                            <label for="tuesday">Tues</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui checkbox">
+                            <input type="checkbox" name="wednesday">
+                            <label for="wednesday">Wed</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui checkbox">
+                            <input type="checkbox" name="thursday">
+                            <label for="thursday">Thurs</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui checkbox">
+                            <input type="checkbox" name="friday">
+                            <label for="friday">Fri</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui checkbox">
+                            <input type="checkbox" name="saturday">
+                            <label for="saturday">Sat</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui checkbox">
+                            <input type="checkbox" name="sunday">
+                            <label for="sunday">Sun</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="equal width fields">
+                    <div class="required field">
+                        <label for="hoursAvailable">Hours Available Per Week</label>
+                        <input type="text" name="hoursAvailable">
+                    </div>
+                    <div class="required field">
+                        <label for="startDate">Date Available to Start</label>
+                        <input type="date" name="startDate">
+                    </div>
+                </div>
+
+                <div class="inline fields">
+                    <label for="driversLicense">Do you have a Driver's License?</label>
+                    <div class="inline field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="driversLicense" tabindex="0" class="hidden" value="yes">
+                            <label>Yes</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="driversLicense" tabindex="0" class="hidden" value="no">
+                            <label>No</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    </div>
+    <div class="ui container container-margin--y">
+        <a class="ui red button left floated" href="PageOne.html">Previous Page</a>
+        <a class="ui blue button right floated" href="PageThree.html">Next Page</a>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+    <script src="js/vendor/semantic-ui.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
