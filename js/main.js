@@ -208,7 +208,6 @@ $('#positionNext').click(function () {
     }
 });
 
-
 $('#educationInfo')
     .form({
         on: 'blur',
@@ -364,7 +363,7 @@ $('#submitForm').click(function () {
     }
 });
 
-$('#applicationForm').submit(function(e){
+$('#applicationForm').submit(function (e) {
     e.preventDefault();
     $('#referencesInfo').form('validate field', 'referencePhone1');
     $('#referencesInfo').form('validate field', 'referenceEmail1');
@@ -374,12 +373,18 @@ $('#applicationForm').submit(function(e){
     if ($('#referencesInfo').form('is valid')) {
         alert('Thank you for your responses. Your application has been submitted and we will get back to you soon.');
         window.location.replace('index.html');
-    }    
+    }
 });
 
 // Give warning on refresh of page to prevent lost data
-window.onbeforeunload = function() {
+window.onbeforeunload = function () {
     return "Are you sure you want to leave? Your changes may not be saved";
 }
 
-    //click next button: validate form, go to next tab, change next tab to active, change previous tab to completed
+$('#tocModal').click(function () {
+    $('.ui.modal').modal('show');
+});
+
+$('#agreeToTerms').click(function(){
+    $('#referencesInfo').form('set value', 'agreeToC', true);
+});
